@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		266E41D121C40B3E00F02A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41D021C40B3E00F02A7A /* AppDelegate.swift */; };
-		266E41D321C40B3E00F02A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41D221C40B3E00F02A7A /* ViewController.swift */; };
 		266E41D621C40B3E00F02A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266E41D421C40B3E00F02A7A /* Main.storyboard */; };
 		266E41D821C40B3F00F02A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266E41D721C40B3F00F02A7A /* Assets.xcassets */; };
 		266E41DB21C40B3F00F02A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266E41D921C40B3F00F02A7A /* LaunchScreen.storyboard */; };
+		266E41E421C413D800F02A7A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41E321C413D800F02A7A /* Movie.swift */; };
+		266E41E721C4159700F02A7A /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41E621C4159700F02A7A /* MovieController.swift */; };
+		266E41EA21C421C700F02A7A /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41E921C421C700F02A7A /* MoviesTableViewController.swift */; };
+		266E41ED21C421F100F02A7A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E41EC21C421F100F02A7A /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		266E41CD21C40B3E00F02A7A /* Assessment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266E41D021C40B3E00F02A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		266E41D221C40B3E00F02A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		266E41D521C40B3E00F02A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		266E41D721C40B3F00F02A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266E41DA21C40B3F00F02A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		266E41DC21C40B3F00F02A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266E41E321C413D800F02A7A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		266E41E621C4159700F02A7A /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		266E41E921C421C700F02A7A /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		266E41EC21C421F100F02A7A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,56 @@
 			isa = PBXGroup;
 			children = (
 				266E41D021C40B3E00F02A7A /* AppDelegate.swift */,
-				266E41D221C40B3E00F02A7A /* ViewController.swift */,
+				266E41EE21C421F500F02A7A /* View */,
+				266E41EB21C421CC00F02A7A /* ViewController */,
+				266E41E821C4173B00F02A7A /* ModelController */,
+				266E41E521C413DC00F02A7A /* Model */,
+				266E41E221C40B7800F02A7A /* Resources */,
+			);
+			path = Assessment3;
+			sourceTree = "<group>";
+		};
+		266E41E221C40B7800F02A7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				266E41D421C40B3E00F02A7A /* Main.storyboard */,
 				266E41D721C40B3F00F02A7A /* Assets.xcassets */,
 				266E41D921C40B3F00F02A7A /* LaunchScreen.storyboard */,
 				266E41DC21C40B3F00F02A7A /* Info.plist */,
 			);
-			path = Assessment3;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		266E41E521C413DC00F02A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				266E41E321C413D800F02A7A /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		266E41E821C4173B00F02A7A /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				266E41E621C4159700F02A7A /* MovieController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		266E41EB21C421CC00F02A7A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				266E41E921C421C700F02A7A /* MoviesTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		266E41EE21C421F500F02A7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				266E41EC21C421F100F02A7A /* MovieTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266E41D321C40B3E00F02A7A /* ViewController.swift in Sources */,
+				266E41ED21C421F100F02A7A /* MovieTableViewCell.swift in Sources */,
+				266E41EA21C421C700F02A7A /* MoviesTableViewController.swift in Sources */,
+				266E41E721C4159700F02A7A /* MovieController.swift in Sources */,
+				266E41E421C413D800F02A7A /* Movie.swift in Sources */,
 				266E41D121C40B3E00F02A7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
